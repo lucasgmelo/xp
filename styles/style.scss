@@ -36,7 +36,7 @@ body {
 }
 
 header {
-    height: 112px;
+    min-height: 112px;
     width: 100%;
 
     background-color: $blackBlue;
@@ -50,14 +50,14 @@ header {
         height: 7px;
 
         position: absolute;
-        top: 112px;
+        top: 108px;
 
         background: linear-gradient(270deg, #084DA3 -33.4%, #084DA3 6.07%, #FFFFFF 49.56%, #084DA3 82.59%, #084DA3 121.25%);
     }
 }
 
 footer {
-    height: 112px;
+    min-height: 112px;
     width: 100%;
 
     background-color: $blackBlue;
@@ -108,4 +108,27 @@ footer {
             font-weight: 400;
         }
 
+}
+
+main {
+    height: 75vh;
+    background: radial-gradient(19.48% 42.48% at 10% 22.48%, #9CC0E9 0%, #508FD9 100%);
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+        .img {
+            @include flex(center, flex-end)
+            flex-direction: column;
+
+            position: relative;
+            top: -40px;
+                h1 {
+                    font-family: $source;
+                    color: white;
+                    font-weight: 500;
+                    margin-top: 30px;
+                    margin-right: 40px;
+                }
+        }
 }
