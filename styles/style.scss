@@ -36,7 +36,7 @@ body {
 }
 
 header {
-    min-height: 12.5vh;
+    min-height: 112px;
     width: 100%;
 
     background-color: $blackBlue;
@@ -50,7 +50,7 @@ header {
         height: 7px;
 
         position: absolute;
-        top: 90px;
+        top: 110px;
 
         background: linear-gradient(270deg, #084DA3 -33.4%, #084DA3 6.07%, #FFFFFF 49.56%, #084DA3 82.59%, #084DA3 121.25%);
     }
@@ -168,21 +168,99 @@ main {
             }
 
             .lucas {
+
+                
                 .iconA {
                     background: url('/assets/icon0.jpg') no-repeat center center;
                     background-size: cover;
+                }
+                
+                .user {
+                    margin-left: 20px;
+                    position: relative;
+                    color: #fff;
+
+                    h3 {
+                        font-family: $source;
+                        font-weight: 400;
+                        font-size: 20px;
+
+                    }
+                    
+                    p {
+                        font-family: $verdana;
+                        margin-top: 20px;
+                        font-size: 13px;
+                    }
+
+                    .input {
+                        
+                        position: absolute;
+                        @include flex(center, center);
+
+                        bottom: -24px;
+
+                        input {
+
+                            padding: 0 0.4rem;
+                            outline: none;
+
+                            height: 40px;
+                            width: 200px;
+
+                            background: #FFFFFF;
+                            border: 0.5px solid #333333;
+                            border-radius: 4px;
+                        }
+
+                        .green {
+                            @include myBtn(#23B221, #267C08);
+                            @include flex(center, center);
+                            margin: 0 10px;
+                            position: relative;
+
+                            img {
+                                position: absolute;
+                                top: 7px;
+                            }
+                        }
+    
+                        .blue {
+                            @include myBtn(#2266F5, #0844C3);
+                            @include flex(center, center);
+                            position: relative;
+
+                            img {
+                                position: absolute;
+                                top: 5px;
+
+                            }
+
+                        }
+                    }
+
                 }
             }
 
             .crystal {
 
                 margin-top: 40px;
+                opacity: 0.6;
 
                 .iconB {
                     background: url('/assets/icon.png') no-repeat center center;
                     background-size: cover;
                     border-color: #fff;
                 }
+
+                .user {
+                    margin-left: 20px;
+
+                    color: #fff;
+                    font-family: $source;
+                    font-size: 20px;
+                }
+
             }
         }
 }

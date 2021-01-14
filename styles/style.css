@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  min-height: 12.5vh;
+  min-height: 112px;
   width: 100%;
   background-color: #084DA3;
   position: relative;
@@ -28,7 +28,7 @@ header::before {
   width: 100%;
   height: 7px;
   position: absolute;
-  top: 90px;
+  top: 110px;
   background: -webkit-gradient(linear, right top, left top, color-stop(-33.4%, #084DA3), color-stop(6.07%, #084DA3), color-stop(49.56%, #FFFFFF), color-stop(82.59%, #084DA3), color-stop(121.25%, #084DA3));
   background: linear-gradient(270deg, #084DA3 -33.4%, #084DA3 6.07%, #FFFFFF 49.56%, #084DA3 82.59%, #084DA3 121.25%);
 }
@@ -175,13 +175,118 @@ main .users .lucas .iconA {
   background-size: cover;
 }
 
+main .users .lucas .user {
+  margin-left: 20px;
+  position: relative;
+  color: #fff;
+}
+
+main .users .lucas .user h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+main .users .lucas .user p {
+  font-family: "Verdana", sans-serif;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+main .users .lucas .user .input {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: -24px;
+}
+
+main .users .lucas .user .input input {
+  padding: 0 0.4rem;
+  outline: none;
+  height: 40px;
+  width: 200px;
+  background: #FFFFFF;
+  border: 0.5px solid #333333;
+  border-radius: 4px;
+}
+
+main .users .lucas .user .input .green {
+  width: 40px;
+  height: 40px;
+  background-color: #23B221;
+  border: 1px solid #fff;
+  -webkit-box-shadow: inset 4px 2px 8px rgba(255, 255, 255, 0.6), inset -2px -3px 5px #267C08;
+          box-shadow: inset 4px 2px 8px rgba(255, 255, 255, 0.6), inset -2px -3px 5px #267C08;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+  position: relative;
+}
+
+main .users .lucas .user .input .green img {
+  position: absolute;
+  top: 7px;
+}
+
+main .users .lucas .user .input .blue {
+  width: 40px;
+  height: 40px;
+  background-color: #2266F5;
+  border: 1px solid #fff;
+  -webkit-box-shadow: inset 4px 2px 8px rgba(255, 255, 255, 0.6), inset -2px -3px 5px #0844C3;
+          box-shadow: inset 4px 2px 8px rgba(255, 255, 255, 0.6), inset -2px -3px 5px #0844C3;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+main .users .lucas .user .input .blue img {
+  position: absolute;
+  top: 5px;
+}
+
 main .users .crystal {
   margin-top: 40px;
+  opacity: 0.6;
 }
 
 main .users .crystal .iconB {
   background: url("/assets/icon.png") no-repeat center center;
   background-size: cover;
   border-color: #fff;
+}
+
+main .users .crystal .user {
+  margin-left: 20px;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
