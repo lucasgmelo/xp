@@ -36,7 +36,7 @@ body {
 }
 
 header {
-    min-height: 112px;
+    min-height: 12.5vh;
     width: 100%;
 
     background-color: $blackBlue;
@@ -50,14 +50,14 @@ header {
         height: 7px;
 
         position: absolute;
-        top: 108px;
+        top: 90px;
 
         background: linear-gradient(270deg, #084DA3 -33.4%, #084DA3 6.07%, #FFFFFF 49.56%, #084DA3 82.59%, #084DA3 121.25%);
     }
 }
 
 footer {
-    min-height: 112px;
+    min-height: 12.5vh;
     width: 100%;
 
     background-color: $blackBlue;
@@ -116,9 +116,10 @@ main {
 
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    align-items: center;
 
         .img {
-            @include flex(center, flex-end)
+            @include flex(center, flex-end);
             flex-direction: column;
 
             position: relative;
@@ -130,5 +131,58 @@ main {
                     margin-top: 30px;
                     margin-right: 40px;
                 }
+        }
+
+        .line {
+            width: 2px;
+            height: 80%;
+
+            margin: 0 42px;
+
+            background: linear-gradient(180deg, #508FD9 0%, #FFFFFF 47.4%, #508FD9 98.96%);
+        }
+
+        .users {
+
+            section {
+                padding: 15px 20px;
+                width: 445px;
+                height: 112.5px;
+
+                background: linear-gradient(90deg, #084DA3 0%, #508FD9 100%);
+                border-radius: 4px 0px 0px 4px;
+
+                position: relative;
+
+                background: url('/assets/Rectangle\ 73\ \(1\).png');
+
+                display: flex;
+                    
+                    .iconA, .iconB {
+                        width: 81px;
+                        height: 81px;
+                        border: 2px solid #FFCC00;
+                        border-radius: 4px;
+                    }
+
+            }
+
+            .lucas {
+                .iconA {
+                    background: url('/assets/icon0.jpg') no-repeat center center;
+                    background-size: cover;
+                }
+            }
+
+            .crystal {
+
+                margin-top: 40px;
+
+                .iconB {
+                    background: url('/assets/icon.png') no-repeat center center;
+                    background-size: cover;
+                    border-color: #fff;
+                }
+            }
         }
 }
