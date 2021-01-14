@@ -8,4 +8,22 @@
 body {
   height: 100vh;
 }
+
+header {
+  height: 12.5vh;
+  min-height: 112px;
+  width: 100%;
+  background-color: #084DA3;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  top: 112px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(-33.4%, #084DA3), color-stop(6.07%, #084DA3), color-stop(49.56%, #FFFFFF), color-stop(82.59%, #084DA3), color-stop(121.25%, #084DA3));
+  background: linear-gradient(270deg, #084DA3 -33.4%, #084DA3 6.07%, #FFFFFF 49.56%, #084DA3 82.59%, #084DA3 121.25%);
+}
 /*# sourceMappingURL=style.css.map */

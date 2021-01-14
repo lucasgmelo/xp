@@ -1,6 +1,7 @@
 $franklin: 'Franklin Gothic', sans-serif; 
 $tahoma: 'Tahoma', sans-serif;
 $verdana: 'Verdana', sans-serif;
+$blackBlue: #084DA3;
 
 * {
     margin: 0;
@@ -10,4 +11,26 @@ $verdana: 'Verdana', sans-serif;
 
 body {
     height: 100vh;
+}
+
+header {
+    height: 12.5vh;
+    min-height: 112px;
+    width: 100%;
+
+    background-color: $blackBlue;
+
+    position: relative;
+
+    &::before{
+        content: "";
+
+        width: 100%;
+        height: 7px;
+
+        position: absolute;
+        top: 112px;
+
+        background: linear-gradient(270deg, #084DA3 -33.4%, #084DA3 6.07%, #FFFFFF 49.56%, #084DA3 82.59%, #084DA3 121.25%);
+    }
 }
